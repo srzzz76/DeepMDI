@@ -56,7 +56,7 @@ if __name__ == "__main__":
             pred = net(img_tensor)
 
         # Process prediction: only first channel (frame1)
-        pred_img = pred[:, 0, :, :].unsqueeze(1).detach().cpu().numpy()[0, 0] + 0.5
+        pred_img = -pred[:, 0, :, :].unsqueeze(1).detach().cpu().numpy()[0, 0] + 0.5
 
         # Save prediction as 16-bit PNG
         pred_16bit = np.clip(pred_img * 65535, 0, 65535).astype(np.uint16)

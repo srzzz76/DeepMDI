@@ -7,7 +7,7 @@ This repository contains the implementation of the paper "Self-supervised model-
 This project presents a novel approach for high-precision phase demodulation from two-frame interferograms using a two-step neural network architecture based on NAFNet. The method combines self-supervised learning with physics-informed model-driven training to achieve accurate phase retrieval from interferometric data.
 
 ## Architecture
-![Framework Overview](framework.jpg)
+![Framework Overview](framework.png)
 
 The proposed method consists of two sequential networks:
 
@@ -49,7 +49,7 @@ pandas
 ```
 
 ### MATLAB
-- MATLAB R2020b or later
+- MATLAB R2019a or later
 - Image Processing Toolbox
 
 ## Installation

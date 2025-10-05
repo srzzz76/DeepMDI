@@ -1,4 +1,3 @@
-# %load train_model_driven.py
 import os
 import math
 import random
@@ -125,7 +124,7 @@ def train_net(net, device, train_data_path, csv_name, criterion, epochs=301, bat
                     delta_mean_value = torch.mean(predicted_delta).item()
 
                     # Model-driven forward calculation
-                    phi_vis = pred[0, 0] * 2 * math.pi - math.pi
+                    phi_vis = pred[0, 0] * 2 * math.pi + math.pi
                     delta_vis = pred[0, 1]
                     AB = torch.tensor(0.5).to(device)
                     AB_expanded = AB.expand_as(phi_vis)
@@ -138,14 +137,13 @@ def train_net(net, device, train_data_path, csv_name, criterion, epochs=301, bat
                     # Convert to numpy for plotting
                     model1_np = model1.cpu().numpy()
                     model2_np = model2.cpu().numpy()
-                    predicted_delta_np = predicted_delta.cpu().numpy()
 
                     # Plot results
                     plt.figure(figsize=(12, 5))
                     titles = ["Input Image1", "Input Image2", "Predicted Phi",
-                              "Predicted Delta", "Model1", "Model2"]
+                              "Model1", "Model2"]
                     images = [input_image1, input_image2, predicted_phi,
-                              predicted_delta_np, model1_np, model2_np]
+                              model1_np, model2_np]
 
                     for i, (title, img) in enumerate(zip(titles, images), 1):
                         plt.subplot(2, 3, i)
@@ -154,7 +152,7 @@ def train_net(net, device, train_data_path, csv_name, criterion, epochs=301, bat
                         plt.axis('off')
                         plt.colorbar(im)
 
-                    plt.suptitle(f"Epoch {epoch} - Delta Mean: {delta_mean_value:.6f}")
+                    plt.suptitle(f"Epoch {epoch}")
                     plt.show()
                     break  # only visualize first batch
 

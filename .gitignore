@@ -42,7 +42,7 @@ ehthumbs.db
 Thumbs.db
 
 # Large datasets (optional - you may want to include small sample datasets)
-autodl-fs/
+# autodl-fs/
 
 # Temporary files
 *.tmp

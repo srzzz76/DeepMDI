@@ -75,8 +75,8 @@ class physics_driven_loss(nn.Module):
         AB = torch.tensor(0.5).to(device)
         AB_expanded = AB.expand_as(phi)
 
-        # Wrap phi to [-π, π]
-        phi = phi * 2 * math.pi - math.pi
+        # Wrap phi to [0, 2π]
+        phi = phi * 2 * math.pi + math.pi
 
         # Physics-driven loss: enforce consistency with the interferometric model
         # Frame 1: I1 = A + B*cos(phi)
