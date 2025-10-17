@@ -30,7 +30,7 @@ torch.cuda.manual_seed_all(seed_value)
 torch.backends.cudnn.deterministic = True
 
 # -------------------- Training Function --------------------
-def train_net(net, device, train_data_path, csv_name, criterion, epochs=300, batch_size=8, lr=1e-3, model_path='model/PDNet.pth'):
+def train_net(net, device, train_data_path, csv_name, criterion, epochs=300, batch_size=8, lr=1e-3, model_path='model/PNNet.pth'):
     """
     Train the normalization network using L1 loss.
     """
@@ -142,8 +142,8 @@ if __name__ == "__main__":
         device,
         train_data_path,
         criterion=F.l1_loss,
-        csv_name="excel/PDNet.csv",
+        csv_name="excel/PNNet.csv",
         batch_size=8,
         lr=1e-3,  # Learning rate can be adjusted depending on training needs; goal: smooth convergence
-        model_path='model/PDNet.pth'
+        model_path='model/PNNet.pth'
     )
