@@ -9,7 +9,7 @@ import re
 if __name__ == "__main__":
     # -------------------- Configuration --------------------
     model_name = 'UMNet'           # Model name
-    test_folder = 'PDNet'          # Test data folder
+    test_folder = 'PNNet'          # Test data folder
     data_folder = 'simu_test'  # Data folder
 
     base_path = f'autodl-fs/{data_folder}'
