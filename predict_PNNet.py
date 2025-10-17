@@ -99,6 +99,7 @@ plt.title(f'{model_name} - Normalization Loss per Sample')
 plt.legend()
 plt.show()
 
+
 # Print average loss
 avg_loss = sum(loss_list) / len(loss_list)
 print(f"Average loss: {avg_loss}")
