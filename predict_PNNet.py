@@ -12,7 +12,7 @@ from NAFNet_arch import NAFNet_arch
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # -------------------- Model configuration --------------------
-model_name = 'PDNet'
+model_name = 'PNNet'
 width = 16
 enc_blks = [1, 1, 1, 1]
 middle_blk_num = 1
