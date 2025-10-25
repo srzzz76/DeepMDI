@@ -1,6 +1,8 @@
 # Self-supervised Model-driven Deep Learning for Two-step Phase-shifting Interferometry
 
-This repository contains the implementation of the paper "Self-supervised model-driven deep learning for two-step phase-shifting interferometry" (submitted to Optics Letters).
+This repository contains the implementation of the paper "Self-supervised model-driven deep learning for two-step phase-shifting interferometry".  If you find this project useful, we would be grateful if you cite the paper：
+
+Runzhou Shi, Tian Zhang, Yuqi Shao, Peiyu Yin, Baokun Wu, and Jian Bai, "Self-supervised model-driven deep learning for two-step phase-shifting interferometry," Opt. Lett. 50, 6578-6581 (2025) 
 
 ## Overview
 
