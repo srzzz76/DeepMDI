@@ -14,7 +14,7 @@ This project presents a novel approach for high-precision phase demodulation fro
 The proposed method consists of two sequential networks:
 
 - **PNNet (Pre-training Normalization Network)**: A self-supervised network for data normalization and pre-processing
-- **UMNet (Model-driven Unwrapping Network)**: A physics-informed network for phase retrieval that incorporates physical constraints
+- **UMNet (Untrained Model-driven Network)**: A physics-informed network for phase retrieval that incorporates physical constraints
 
 ## Project Structure
 
