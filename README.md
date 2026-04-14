@@ -4,6 +4,21 @@ This repository contains the implementation of the paper "Self-supervised model-
 
 Runzhou Shi, Tian Zhang, Yuqi Shao, Peiyu Yin, Baokun Wu, and Jian Bai, "Self-supervised model-driven deep learning for two-step phase-shifting interferometry," Opt. Lett. 50, 6578-6581 (2025) 
 
+@article{Shi2025c,
+  title = {Self-Supervised Model-Driven Deep Learning for Two-Step Phase-Shifting Interferometry},
+  author = {Shi, Runzhou and Zhang, Tian and Shao, Yuqi and Yin, Peiyu and Wu, Baokun and Bai, Jian},
+  year = 2025,
+  month = nov,
+  journal = {Optics Letters},
+  volume = {50},
+  number = {21},
+  pages = {6578},
+  issn = {0146-9592, 1539-4794},
+  doi = {10.1364/OL.577384},
+  urldate = {2025-10-26},
+  langid = {english}
+}
+
 ## Overview
 
 This project presents a novel approach for high-precision phase demodulation from two-frame interferograms using a two-step neural network architecture based on NAFNet. The method combines self-supervised learning with physics-informed model-driven training to achieve accurate phase retrieval from interferometric data.
